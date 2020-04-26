@@ -42,7 +42,7 @@ class Python:
 class Conan:
     nickname = "平成的福尔摩斯"
     age = 7
-    birth_date = 5 / 4
+    birth_date = "5月4日"
     favorite_words = "真実はいつもひとつ！"
 
     def play_football(self):
