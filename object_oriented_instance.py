@@ -21,7 +21,8 @@ class DaJi:
     # 定义类屬性
     height = 165
     positioning = "AP"
-    statement = "被玩儿坏了。"
+    # 私有变量
+    __favorite_lines = "被玩儿坏了。"
 
     # 定义类中方法
     def squat_grass(self):
@@ -54,17 +55,22 @@ class Conan:
     nickname = "平成的福尔摩斯"
     age = 7
     birth_date = "5月4日"
-    favorite_words = "真実はいつもひとつ！"
+    # 定义私有变量
+    __chunibyo_words = "真実はいつもひとつ！"
 
     # 定义类中方法
     def play_football(self):
         print("柯南会踢足球！")
 
     def reasioning(self):
-        print("柯南很擅长推理！")
+        print("柯南很擅长推理！他推理的时候很爱说：{}".format(self.__chunibyo_words))
 
     def speak_english(self):
         print("柯南会说英语！")
+
+
+conan = Conan()
+conan.reasioning()
 
 
 # 实例5：地球
